@@ -1,7 +1,7 @@
 ---
 name: binary-search-demo
 description: "二分查找（折半查找）演示：编写、运行、可视化查找过程，Python + C++ 双版本"
-version: 1.0.0
+version: 1.1.0
 author: Hermes Agent
 platforms: [windows, linux, macos]
 ---
@@ -25,7 +25,7 @@ platforms: [windows, linux, macos]
 
 ### 1. 创建 Python 脚本
 
-写入桌面（Windows）或当前目录，包含：
+写入 `HERMES-DOC` 目录（桌面下 `C:/Users/Administrator/Desktop/HERMES-DOC/`）或用户指定的目录，包含：
 - 二分查找函数（带过程可视化）
 - 随机生成 N 个整数并排序
 - 查找目标并展示每一步的查找区间
@@ -112,6 +112,32 @@ python binary_search.py
 - 查找过程的分步可视化
 - 找到/未找到的两种情况
 - 时间复杂度分析
+
+## 安装 & 使用
+
+### 安装此技能
+
+```bash
+# 方式1：从 GitHub 直接安装
+hermes skills install \
+  "https://raw.githubusercontent.com/warmcrack2020/hermes-agent/master/skills/software-development/binary-search-demo/SKILL.md"
+
+# 方式2：添加技能源后安装
+hermes skills tap add warmcrack2020/hermes-agent
+hermes skills install binary-search-demo
+```
+
+### 加载使用
+
+```bash
+# 启动时加载
+hermes -s binary-search-demo
+
+# 聊天中加载
+/skill binary-search-demo
+```
+
+加载后，说"演示二分查找"或"来一个二分法搜索"，我就会按此技能流程执行。
 
 ## 注意事项
 
