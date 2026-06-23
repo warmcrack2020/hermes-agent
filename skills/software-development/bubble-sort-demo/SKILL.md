@@ -1,7 +1,7 @@
 ---
 name: bubble-sort-demo
 description: "排序算法跨语言演示：编写、编译/运行、可视化排序过程（Python + C++），含 Wandbox 在线编译技巧"
-version: 2.1.0
+version: 2.2.0
 author: Hermes Agent
 platforms: [windows, linux, macos]
 related_skills: [online-cpp-compilation]
@@ -126,6 +126,32 @@ curl -sL -X POST "https://wandbox.org/api/compile.json" \
 - 相同数据 Python 和 C++ 输出一致性验证（可选）
 
 ---
+
+## 安装 & 使用
+
+### 安装此技能
+
+```bash
+# 方式1：从 GitHub 直接安装
+hermes skills install \
+  "https://raw.githubusercontent.com/warmcrack2020/hermes-agent/master/skills/software-development/bubble-sort-demo/SKILL.md"
+
+# 方式2：添加技能源后安装
+hermes skills tap add warmcrack2020/hermes-agent
+hermes skills install bubble-sort-demo
+```
+
+### 加载使用
+
+```bash
+# 启动时加载
+hermes -s bubble-sort-demo
+
+# 聊天中加载
+/skill bubble-sort-demo
+```
+
+加载后，说"演示冒泡排序"或"来个C++版排序"，我就会按此技能流程执行。
 
 ## 注意事项
 
